@@ -14,15 +14,18 @@ public class StudyCase01Soal08 {
 		
 		int n = Integer.parseInt(input.nextLine());
 		
-		int number=3;
+		int number=4;
 		
 		for (int i=0; i <n; i++) {
 			
+		{
+				
+			
 			System.out.print(number + "\t");
 			
-			number=number*3;
+			number=number*4;
 			
 		}
 	}
-
+	}
 }
