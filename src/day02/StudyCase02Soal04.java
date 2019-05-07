@@ -19,14 +19,12 @@ public class StudyCase02Soal04 {
 		int realSum = 0;
 		int[] deret = new int[n1];
 
-		// Cetak Deret N1
 		for (int k = 0; k < n1; k++) {
 			System.out.print(k + "\t");
 		}
 
 		System.out.println();
 
-		// Cetak Deret Bawah
 		for (int i = 0; i < n1; i++) {
 			if (i % 2 == 0) {
 				System.out.print(temp + "\t");
@@ -46,7 +44,6 @@ public class StudyCase02Soal04 {
 
 		System.out.println();
 
-		// Perhitungan
 		for (int j = 0; j < n1; j++) {
 			if (j % 2 == 1) {
 				System.out.print(deret[j] + " + ");
@@ -54,7 +51,6 @@ public class StudyCase02Soal04 {
 			}
 		}
 
-		// Cetak Hasil
 		System.out.println(" = " + realSum);
 
 	}
