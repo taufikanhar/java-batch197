@@ -2,7 +2,7 @@ package day03;
 
 import java.util.Scanner;
 
-public class StudyCase03Soal01 {
+public class StudyCase03Soal01Ulang7 {
 
 	protected static Scanner input;
 
@@ -10,24 +10,25 @@ public class StudyCase03Soal01 {
 
 		input = new Scanner(System.in);
 
-		System.out.println("N");
-		int n = Integer.parseInt(input.nextLine());
+		System.out.println("N: ");
+		int n = input.nextInt();
+		// deklarasi array 2 dimensi
 		int array[][] = new int[n][n];
-		// deklarasi aray 2 dimensi
+		// deklarasi deret
 		int deret[] = new int[n];
-		// buat deret pertama
+		// deklarasi nilai awal
 		int awal = 1;
-		// nilai awal dari deret
+		// looping deret
 		for (int i = 0; i < deret.length; i++) {
 			deret[i] = awal;
 			awal = awal + (i + 2);
 
 		}
-
-		int[] deret2 = new int[n];
-		// buat deret kedua
+		// deklarasi deret ke 2
+		int deret2[] = new int[n];
+		// deklarasi nilai awal ke 2
 		int awal2 = 2;
-		// nilai awal deret 2
+		// looping deret ke 2
 		for (int j = 0; j < deret2.length; j++) {
 			deret2[j] = awal2;
 			awal2 = awal2 + (2 * (j + 1));
@@ -35,14 +36,12 @@ public class StudyCase03Soal01 {
 		}
 		for (int i = 0; i < deret2.length; i++) {
 			for (int j = 0; j < deret2.length; j++) {
+				// rumus diagonal kiri atas ke kanan bawah
 				if (i == j)
-					// rumus diagonal atas kiri kanan bawah
 					array[i][j] = deret[i];
-				// array pertama
+				// rumus diagonal kiri bawah ke kanan atas
 				else if (i + j == n - 1)
-					// rumus diagonal bawah kiri atas kanan
 					array[i][j] = deret2[j];
-				// array kedua
 				System.out.print(array[i][j] + "\t");
 			}
 			System.out.println();

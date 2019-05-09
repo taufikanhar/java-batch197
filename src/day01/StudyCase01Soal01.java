@@ -10,17 +10,19 @@ public class StudyCase01Soal01 {
 		
 		input = new Scanner(System.in);
 		
-		System.out.println("Masukan Nomer: ");
+		System.out.println("Masukan Jumlah Deret: ");
 		
-		int n = Integer.parseInt(input.nextLine());
+		int n = input.nextInt();
 		
 		int number=1;
 		
-		for (int i = 0; i <n; i++) {
+		for (int i = 0; i <9; i++) {
+			//rumus perulangan
 			
 			System.out.print(number +"\t");
-		
+			//print perulangan
 			number=number+2;
+			
 		}
 		
 	}
